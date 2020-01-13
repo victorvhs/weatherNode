@@ -24,7 +24,7 @@ weatherForm.addEventListener('submit', (e) =>{
     
    
 
-    const urlData ='http://localhost:3000/weather?address='+location 
+    const urlData ='/weather?address='+location 
     fetch(urlData).then((response) =>{
         response.json().then((data)=>{
             if(data.error){
